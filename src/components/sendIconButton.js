@@ -1,7 +1,16 @@
 import React from 'react'
 import SendIcon from '@mui/icons-material/Send';
-export const sendIconButton = () => {
+import {Button, IconButton} from '@mui/material';
+
+export const SendIconButton = () => {
   return (
-    <SendIcon />
+    <>
+        {/* <Button variant='contained' sx={{m:2}} endIcon={<SendIcon></SendIcon>}>Send</Button> */}
+        
+        <IconButton>
+            <SendIcon></SendIcon>
+        </IconButton>
+    
+    </>
   )
 }

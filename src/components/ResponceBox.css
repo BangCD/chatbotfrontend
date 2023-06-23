@@ -1,0 +1,26 @@
+.Responce-box-wrapper{
+    background-color: white;
+    width: 100%;
+    border-radius: 10px;
+    height: 30rem;
+    padding: 0 15px;
+    box-shadow: 0px 0px 8px #ddd;
+    display: flex;
+    align-items: center;
+
+}
+
+textarea{
+  width: 100%;
+  height: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  /* border: 2px solid #ccc;   */
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  background-color: #f8f8f8;
+  resize: none;
+  font-size: 16px;
+
+}

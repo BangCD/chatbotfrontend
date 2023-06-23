@@ -16,6 +16,11 @@
   }
 }
 
+.in5logo{
+  max-width: 4%;
+  height: auto;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -40,12 +45,43 @@
   }
 }
 
+.chat-wrapper{
+  height: 80%;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+
+}
+
+.responce-box-container{
+  padding: 20px 10px 0;
+  min-height: calc(100%-75px);
+  max-height: calc(100%-75px);
+  overflow: auto;
+  /* width:50%;
+  height: 100%;
+  margin:auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 200px; */
+}
+
 .search-bar-container{
-  padding-top:20vh;
+  background-color: #efefef;
+  min-height: 75px;
+  max-height: 75px;
+  display: flex;
+  justify-content: flex-left;
+  align-items: center;
+  padding: 0 32px;
+  /* padding-top:80vh;
   width: 40%;
   margin:auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 200px;
+  min-width: 200px; */
 }
+
+
