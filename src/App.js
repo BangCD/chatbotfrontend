@@ -4,29 +4,16 @@ import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
 import { useId } from 'react';
 import axios from 'axios'
+//import { SearchBar } from './components/SearchBar';
+import { sendIconButton } from './components/sendIconButton';
+ 
+
+
 
 function App() {
   const [getMessage, setGetMessage] = useState({})
 
   const [val,setVal]=useState('Hello there Default')
-
-  // const click=()=>{
-  //   var JSONresponce={
-  //     "message":"worl1d"
-  //   }
-  //   fetch('http://localhost:5000/flask/hello',{
-  //     method:"POST",
-  //     //mode:'cors',
-  //     body:JSON.stringify(JSONresponce),
-  //     headers: { "content-type": "application/json" },
-  //   }).then(response => {
-  //     console.log("RESPONCE FROM POST ",response)
-  //     //setPostContent(response.data.message)
-  //   })
-
-
-  //   // setPostContent(val)
-  // }
 
 
   const click=()=>{
@@ -52,26 +39,12 @@ function App() {
   const [postContent,setPostContent]=useState('')
 
 
-  // useEffect(()=>{
-  //   axios.get('http://localhost:5000/flask/hello').then(response => {
-  //     console.log("SUCCESS", response)
-  //     console.log(response.data.message)
-  //     setPostContent(response.data.message)
-  //     setGetMessage(response)
-  //   }).catch(error => {
-  //     console.log(error)
-  //   })
 
-  // }, [])
   return (
   <div className='App'>
-    <input onChange={change}
-    
-    value={val}></input>
-    <button onClick={click}>Click</button>
     <div> 
     <label>
-      Write your post:
+      Responce:
       <textarea 
         value={postContent}
         readOnly={true}
@@ -81,6 +54,17 @@ function App() {
     </label>  
     </div>
 
+    <div className='search-bar-container'>
+      {/* <div>SearchBar</div> */}
+      <SearchBar></SearchBar>
+      <sendIconButton></sendIconButton>
+      {/* <div className='InputBar'>
+        <input id="inputSearch" onChange={change} value={val}></input>
+          <div className='inputSearchIcon'>
+            <button onClick={click}>Click</button>
+          </div>
+      </div> */}
+    </div>
   </div>
   )
 }
